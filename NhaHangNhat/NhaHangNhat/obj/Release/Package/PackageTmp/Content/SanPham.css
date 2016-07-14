@@ -4,11 +4,13 @@
         .Body > .NoiDungChinh {
             position: static;
             float: right;
+            padding: 0 0.1em 0 0.1em;
         }
 
             /*Trang chủ*/
             /*Tin tức*/
             .Body > .NoiDungChinh > .TinTuc {
+                padding:0;
             }
 
                 .Body > .NoiDungChinh > .TinTuc > .TinMoi {
@@ -28,7 +30,7 @@
                         width: 65%;
                         float: right;
                         color: #fff;
-                        font-size: 2em;
+                        font-size: 0.6em;
                         font-weight: bold;
                     }
 
@@ -42,17 +44,19 @@
                         float: right;
                         color: #fff;
                         text-align: justify;
-                        padding-right: 1em;
+                        padding-right: 0.1em;
+                        font-size:0.4em;
                     }
 
                 .Body > .NoiDungChinh > .TinTuc > .DanhSach {
+                    padding:0 0.1em 0 0.1em;
                 }
 
                     .Body > .NoiDungChinh > .TinTuc > .DanhSach > .NoiDung {
                         position: static;
                         display: block;
                         color: #fff;
-                        font-size: 1.5em;
+                        font-size: 0.6em;
                     }
 
                         .Body > .NoiDungChinh > .TinTuc > .DanhSach > .NoiDung:hover {
@@ -69,11 +73,12 @@
             /*Thực đơn*/
             .Body > .NoiDungChinh > .ThucDon {
                 border-bottom: solid 1px #ff1a1a;
+                padding:0.1em;
             }
 
                 .Body > .NoiDungChinh > .ThucDon > .TieuDe {
                     font-family: UVNKieu_B;
-                    font-size: 3em;
+                    font-size: 1.5em;
                     font-weight: bold;
                     color: #fff;
                     font-style: italic;
@@ -81,8 +86,8 @@
                 }
 
                 .Body > .NoiDungChinh > .ThucDon > .MonAn {
-                    padding: 1em;
-                    height: 230px;
+                    padding: 0.1em;
+                    height: 10em;
                 }
 
                     .Body > .NoiDungChinh > .ThucDon > .MonAn:hover {
@@ -102,13 +107,13 @@
 
                     .Body > .NoiDungChinh > .ThucDon > .MonAn > .TenMon {
                         color: #fff;
-                        font-size: 1.3em;
+                        font-size: 0.7em;
                         margin: 0;
                     }
 
                     .Body > .NoiDungChinh > .ThucDon > .MonAn > .Gia {
                         color: #ff1a1a;
-                        font-size: 1.3em;
+                        font-size: 0.8em;
                     }
 
                 .Body > .NoiDungChinh > .ThucDon > .SoTrang {
@@ -188,6 +193,7 @@
             /*Trang chủ*/
             /*Tin tức*/
             .Body > .NoiDungChinh > .TinTuc {
+                padding-right:0;
             }
 
                 .Body > .NoiDungChinh > .TinTuc > .TinMoi {
@@ -196,7 +202,7 @@
                 }
 
                     .Body > .NoiDungChinh > .TinTuc > .TinMoi > .Anh {
-                        width: 30%;
+                        width: 33%;
                         float: left;
                         border: solid 2px #fff;
                         border-radius: 4px;
@@ -207,7 +213,7 @@
                         width: 65%;
                         float: right;
                         color: #fff;
-                        font-size: 2em;
+                        font-size: 1.1em;
                         font-weight: bold;
                     }
 
@@ -221,7 +227,8 @@
                         float: right;
                         color: #fff;
                         text-align: justify;
-                        padding-right: 1em;
+                        padding-right: 0.5em;
+                        font-size:0.8em;
                     }
 
                 .Body > .NoiDungChinh > .TinTuc > .DanhSach {
@@ -231,7 +238,7 @@
                         position: static;
                         display: block;
                         color: #fff;
-                        font-size: 1.5em;
+                        font-size: 1em;
                     }
 
                         .Body > .NoiDungChinh > .TinTuc > .DanhSach > .NoiDung:hover {
@@ -242,7 +249,7 @@
 
                         .Body > .NoiDungChinh > .TinTuc > .DanhSach > .NoiDung > span {
                             color: #ff0000;
-                            padding-right: 0.4em;
+                            padding-right: 0.2em;   
                         }
 
             /*Thực đơn*/
@@ -252,7 +259,7 @@
 
                 .Body > .NoiDungChinh > .ThucDon > .TieuDe {
                     font-family: UVNKieu_B;
-                    font-size: 3em;
+                    font-size: 2.5em;
                     font-weight: bold;
                     color: #fff;
                     font-style: italic;
@@ -261,7 +268,7 @@
 
                 .Body > .NoiDungChinh > .ThucDon > .MonAn {
                     padding: 1em;
-                    height: 230px;
+                    height: 180px;
                 }
 
                     .Body > .NoiDungChinh > .ThucDon > .MonAn:hover {
@@ -281,7 +288,7 @@
 
                     .Body > .NoiDungChinh > .ThucDon > .MonAn > .TenMon {
                         color: #fff;
-                        font-size: 1.3em;
+                        font-size: 1em;
                         margin: 0;
                     }
 
