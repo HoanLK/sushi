@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    @*Bootstrap*@
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    @*Font*@
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    @*Dev*@
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/SanPham.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="col-md-12 col-sm-12 col-xs-12 Header">
+        <div class="col-md-12 col-sm-12 col-xs-12 TopHeader">
+            <p class="Text">38 Văn Cao, Ngô Quyền, Hải Phòng - ĐT: 0903 967 388</p>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12 MidHeader">
+            <div class="col-md-4 col-sm-4 col-xs-12 Logo">
+                <img src="~/img/Logo.png" class="img-responsive" />
+            </div>
+
+            <div class="col-md-8 col-sm-8 col-xs-12 MenuBar">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="@Url.Action("Index","Home")">Trang chủ</a></li>
+                                <li><a href="#">Giới thiệu</a></li>
+                                <li><a href="#">Tin tức</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                                <li>
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <button type="submit" class="btn btn-default fa fa-search"></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 Body">
+        <div class="col-md-12 col-sm-12 col-xs-12 Banner">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="~/img/Banner.png" class="img-responsive" style="width:100%;" />
+                    </div>
+                    <div class="item">
+                    </div>
+                    ...
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3 col-xs-3 MenuTrai">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="TieuDe">
+                    <img src="~/img/Menu.png" class="img-responsive" />
+                    <p>Menu</p>
+                </li>
+                <li class="DanhSach"><a href="@Url.Action("ThucDon","Home")">Sashimi</a></li>
+                <li class="DanhSach"><a href="@Url.Action("ThucDon","Home")">Sushi</a></li>
+                <li class="DanhSach"><a href="@Url.Action("ThucDon","Home")">Salad</a></li>
+                <li class="DanhSach"><a href="@Url.Action("ThucDon","Home")">Lẩu Nhật</a></li>
+                <li class="DanhSach"><a href="@Url.Action("ThucDon","Home")">BuffeeA - 238k</a></li>
+                <li class="DanhSach"><a href="@Url.Action("ThucDon","Home")">BuffeeB - 298k</a></li>
+                <li class="DanhSach"><a href="@Url.Action("ThucDon","Home")">Set cơm trưa - tối</a></li>
+                <li class="DanhSach"><a href="@Url.Action("ThucDon","Home")">Combo</a></li>
+                <li class="DanhSach"><a href="@Url.Action("ThucDon","Home")">Rượu Nhật</a></li>
+                <li class="DanhSach"><a href="@Url.Action("ThucDon","Home")">Đồ chiên - nướng - xào</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="col-md-9 col-sm-9 col-xs-9 NoiDungChinh">
+            @RenderBody()
+        </div>
+
+        <div class="col-md-3 col-sm-3 col-xs-3 NhungFB">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNhahangNhatSushiKazoku%2F%3Fref%3Dts%26fref%3Dts%26__mref%3Dmessage_bubble&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
+    </div>
+
+    <footer class="col-md-12 col-sm-12 col-xs-12 Footer">
+        <div class="col-md-5 col-sm-5 col-xs-5 ThongTin">
+            <p class="TenNhaHang">Nhà hàng Nhật bản Sushi Kazoku</p>
+            <p class="DiaChi">Địa chỉ: 38 văn Cao, Ngô Quyền, Hải Phòng</p>
+            <p class="DiaChi">SĐT: 0903 967 388</p>
+            <p class="DiaChi">Email: sushi.kazoku2699@gmail.com</p>
+            <p class="DiaChi">Website: sushikazoku.net</p>
+        </div>
+
+        <div class="col-md-7 col-sm-7 col-xs-7 MenuDuoi">
+            <nav class="navbar navbar-inverse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="col-md-7 col-sm-7 col-xs-7 MangXH">
+            <img src="~/img/Facebook.png" class="img-responsive" />
+            <img src="~/img/Youtube.png" class="img-responsive" />
+        </div>
+    </footer>
+
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+</body>
+</html>
