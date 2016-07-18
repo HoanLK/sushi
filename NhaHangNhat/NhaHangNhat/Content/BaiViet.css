@@ -1,0 +1,77 @@
+﻿/* Small devices (phone, <768px) */
+@media (max-width: 767px) {
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 767px) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .BaiViet{
+color:#fff;
+    }
+
+    .BaiViet>.TieuDe{
+        font-family: UVNKieu_B;
+            font-size: 3em;
+            font-weight: bold;
+            color: #fff;
+            font-style: italic;
+            border-bottom: solid 1px #ff0000;
+    }
+
+    .BaiViet>.NoiDung{
+        font-size:1.4em;
+    }
+
+    .BaiVietLienQuan {
+    }
+
+        .BaiVietLienQuan > .TieuDe {
+            font-family: UVNKieu_B;
+            font-size: 3em;
+            font-weight: bold;
+            color: #fff;
+            font-style: italic;
+            border-bottom: solid 1px #ff0000;
+        }
+
+    .BaiVietLienQuan {
+    }
+
+        .BaiVietLienQuan > .GoiY {
+            padding: 1em;
+            height: 230px;
+            -webkit-transition: .5s all;
+            -moz-transition: .5s all;
+        }
+
+            .BaiVietLienQuan > .GoiY:hover {
+                -webkit-transition-delay: 0s;
+                -moz-transition-delay: 0s;
+                background-color: #ff1a1a;
+                color: #fff;
+                text-decoration: none;
+            }
+
+                .BaiVietLienQuan > .GoiY:hover .TenBai {
+                    color: #fff;
+                }
+
+            .BaiVietLienQuan > .GoiY > img {
+                width: 100%;
+            }
+
+            .BaiVietLienQuan > .GoiY > .TenBai {
+                color: #ff1a1a;
+                font-size: 1.3em;
+                margin: 0;
+            }
+
+            .BaiVietLienQuan > .GoiY > .TomTat {
+                color: #fff;
+                font-size: 1em;
+                margin: 0;
+            }
+}

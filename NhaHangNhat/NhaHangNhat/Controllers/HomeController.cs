@@ -22,5 +22,15 @@ namespace NhaHangNhat.Controllers
         {
             return View();
         }
+
+        public ActionResult DanhMuc()
+        {
+            return View();
+        }
+
+        public ActionResult BaiViet()
+        {
+            return View();
+        }
     }
 }

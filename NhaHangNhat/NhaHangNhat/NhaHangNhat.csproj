@@ -175,6 +175,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\BaiViet.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -267,6 +268,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\ThucDon.cshtml" />
     <Content Include="Views\Home\ChiTietMonAn.cshtml" />
+    <Content Include="Views\Home\DanhMuc.cshtml" />
+    <Content Include="Views\Home\BaiViet.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
