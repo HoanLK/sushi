@@ -123,6 +123,6 @@ D:\Project\KNT\sushi\NhaHangNhat\NhaHangNhat\bin\System.Web.Razor.xml
 D:\Project\KNT\sushi\NhaHangNhat\NhaHangNhat\bin\System.Web.WebPages.xml
 D:\Project\KNT\sushi\NhaHangNhat\NhaHangNhat\bin\System.Web.WebPages.Deployment.xml
 D:\Project\KNT\sushi\NhaHangNhat\NhaHangNhat\bin\System.Web.WebPages.Razor.xml
-D:\Project\KNT\sushi\NhaHangNhat\NhaHangNhat\obj\Debug\NhaHangNhat.csprojResolveAssemblyReference.cache
 D:\Project\KNT\sushi\NhaHangNhat\NhaHangNhat\obj\Debug\NhaHangNhat.dll
 D:\Project\KNT\sushi\NhaHangNhat\NhaHangNhat\obj\Debug\NhaHangNhat.pdb
+D:\Project\KNT\sushi\NhaHangNhat\NhaHangNhat\obj\Debug\NhaHangNhat.csprojResolveAssemblyReference.cache
