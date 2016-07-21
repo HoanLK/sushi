@@ -32,5 +32,10 @@ namespace NhaHangNhat.Controllers
         {
             return View();
         }
+
+        public ActionResult TatCaBaiViet()
+        {
+            return View();
+        }
     }
 }

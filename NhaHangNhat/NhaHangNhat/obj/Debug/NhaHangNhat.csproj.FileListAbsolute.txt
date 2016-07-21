@@ -123,9 +123,9 @@ D:\Project\KNT\sushi\NhaHangNhat\NhaHangNhat\bin\System.Web.Razor.xml
 D:\Project\KNT\sushi\NhaHangNhat\NhaHangNhat\bin\System.Web.WebPages.xml
 D:\Project\KNT\sushi\NhaHangNhat\NhaHangNhat\bin\System.Web.WebPages.Deployment.xml
 D:\Project\KNT\sushi\NhaHangNhat\NhaHangNhat\bin\System.Web.WebPages.Razor.xml
-D:\Project\KNT\sushi\NhaHangNhat\NhaHangNhat\obj\Debug\NhaHangNhat.csprojResolveAssemblyReference.cache
 D:\Project\KNT\sushi\NhaHangNhat\NhaHangNhat\obj\Debug\NhaHangNhat.dll
 D:\Project\KNT\sushi\NhaHangNhat\NhaHangNhat\obj\Debug\NhaHangNhat.pdb
+<<<<<<< HEAD
 D:\Code\TeamDev\sushi\NhaHangNhat\NhaHangNhat\bin\roslyn\csc.exe
 D:\Code\TeamDev\sushi\NhaHangNhat\NhaHangNhat\bin\roslyn\csc.exe.config
 D:\Code\TeamDev\sushi\NhaHangNhat\NhaHangNhat\bin\roslyn\csc.rsp
@@ -190,3 +190,6 @@ D:\Code\TeamDev\sushi\NhaHangNhat\NhaHangNhat\bin\System.Web.WebPages.Razor.xml
 D:\Code\TeamDev\sushi\NhaHangNhat\NhaHangNhat\obj\Debug\NhaHangNhat.csprojResolveAssemblyReference.cache
 D:\Code\TeamDev\sushi\NhaHangNhat\NhaHangNhat\obj\Debug\NhaHangNhat.dll
 D:\Code\TeamDev\sushi\NhaHangNhat\NhaHangNhat\obj\Debug\NhaHangNhat.pdb
+=======
+D:\Project\KNT\sushi\NhaHangNhat\NhaHangNhat\obj\Debug\NhaHangNhat.csprojResolveAssemblyReference.cache
+>>>>>>> origin/master
