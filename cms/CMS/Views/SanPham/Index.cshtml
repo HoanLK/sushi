@@ -1,0 +1,30 @@
+﻿@model CMS.Models.Product
+@{
+    ViewBag.Title = "Index";
+}
+
+<div ng-controller="showProductController">
+    <input type="hidden" value="@Model.idProduct" id="idProduct" />
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ChiTietMonAn">
+        <p class="TieuDe">Sashimi</p>
+        <img src="{{product.image}}" title="{{product.title}}" alt="{{product.title}}" class="img-responsive Anh" />
+        <div class="ChiTiet">
+            <p class="TenMon">{{product.title}}</p>
+            <p class="Gia">Đơn giá: {{product.price | number:0}} đ </p>
+            <p class="NoiDung" ng-bind-html="product.content"></p>
+        </div>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ThucDon">
+        <p class="TieuDe">Một số món ăn khác</p>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 MonAn" ng-repeat="(index, value) in relateProducts">
+            <a href="/san-pham/{{value.alias}}-{{value.idProduct}}">
+                <img src="{{value.image}}" class="img-responsive" />
+                <p class="TenMon">{{value.title}}</p>
+                <p class="Gia">Đơn giá: {{value.price | number:0}} <sup>đ</sup></p>
+            </a>
+        </div>
+    </div>
+
+</div>

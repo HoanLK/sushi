@@ -1,0 +1,12 @@
+﻿
+<ul class="nav nav-pills nav-stacked" ng-controller="menuCategoryProductController">
+    <li class="TieuDe">
+        <img src="~/Content/Images/images/CTA-KhongXoa/Menu.png" class="img-responsive" />
+        <p>Menu</p>
+    </li>
+    <li ng-repeat="(index, value) in categoryProducts" class="DanhSach">
+        <a href="/danh-muc-san-pham/{{value.alias}}-{{value.idCategory}}">
+            {{value.title}}
+        </a>
+    </li>
+</ul>

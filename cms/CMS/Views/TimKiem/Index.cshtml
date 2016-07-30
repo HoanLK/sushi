@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Kết quả tìm kiếm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div ng-controller="showSearchController">
+    <h1 class="title" ng-show="searchText.length > 0">Kết quả tìm kiếm cho <span style="font-weight: bold; font-style: italic;">"{{searchText}}"</span></h1>
+    <h1 class="title" ng-show="!(searchText.length > 0)"><i>Xin lỗi! Kết quả tìm kiếm không tồn tại</i></h1>
+    <div class="col-lg-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 ThucDon">
+        <p class="TieuDe" ng-show="products.length > 0">Sản phẩm ({{products.length}})</p>
+
+        <div class="col-lg-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 MonAn" dir-paginate="(index, value) in products | itemsPerPage: 8">
+            <a href="/san-pham/{{value.alias}}-{{value.idProduct}}">
+                <img alt="{{value.title}}" src="{{value.image}}" class="img-responsive" />
+                <p class="TenMon">{{value.title}}</p>
+                <p class="Gia">Đơn giá: {{value.price | number:0}} <sup>đ</sup></p>
+            </a>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ccontainer" style="text-align:center"><dir-pagination-controls></dir-pagination-controls></div>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-sm-12 BaiVietLienQuan">
+        <p class="TieuDe" ng-show="posts.length > 0">Bài viết ({{posts.length}})</p>
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 GoiY" dir-paginate="(index, value) in posts | itemsPerPage:6">
+            <a href="/bai-viet/{{value.alias}}-{{value.idPost}}">
+                <img src="{{value.image}}" class="img-responsive" />
+                <p class="TenBai">{{value.title}}</p>
+                <p class="TomTat">{{value.description | limitTo: 100}}{{value.description.length > 100 ? '&hellip;' : ''}}</p>
+            </a>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ccontainer" style="text-align:center"><dir-pagination-controls></dir-pagination-controls></div>
+    </div>
+</div>

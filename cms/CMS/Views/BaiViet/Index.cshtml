@@ -1,0 +1,28 @@
+﻿@model CMS.Models.Post
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-controller="showPostController">
+    <input type="hidden" value="@Model.idPost" id="idPost" />
+    <div class="col-lg-12 col-md-12 col-sm-12 col-sm-12 BaiViet">
+        <p class="TieuDe">{{post.title}}</p>
+
+        <div class="NoiDung" ng-bind-html="post.content"></div>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-sm-12 BaiVietLienQuan">
+        <p class="TieuDe">Bài viết liên quan</p>
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 GoiY" dir-paginate="(index, value) in relatedPosts | itemsPerPage: 4">
+            <a href="/bai-viet/{{value.alias}}-{{value.idPost}}">
+
+                <img src="{{value.image}}" class="img-responsive" />
+                <p class="TenBai">{{value.title}}</p>
+                <p class="TomTat">{{value.description | limitTo: 100}}{{value.description.length > 100 ? '&hellip;' : ''}}</p>
+            </a>
+        </div>
+
+    </div>
+</div>
+

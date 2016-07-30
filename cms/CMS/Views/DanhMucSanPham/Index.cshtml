@@ -1,0 +1,35 @@
+﻿@model CMS.Models.Product
+@{
+    ViewBag.Title = "Index";
+}
+
+<div ng-app="frontApp">
+    <div ng-controller="allCategoryProductController">
+        <div class="col-md-12 col-sm-12 col-xs-12 ThucDon">
+            <p class="TieuDe">Tất cả sản phẩm</p>
+
+            <div class="col-md-3 col-sm-3 col-xs-3 MonAn" dir-paginate="(index, value) in allProduct | itemsPerPage: 12">
+                <a href="/danh-muc-san-pham/{{Product.alias}}-{{product.idProduct}}">
+                    <img alt="{{product.title}}" src="{{product.image}}" class="img-responsive" />
+                    <p class="TenMon">{{product.title}}</p>
+                    <p class="Gia">Đơn giá: {{product.price}} <sup>đ</sup></p>
+                </a>
+            </div>
+
+
+            <nav class="col-md-12 col-sm-12 col-xs-12 SoTrang">
+                <ul class="pagination">
+                    <li><a href="#" aria-label="Previous"><span aria-hidden="true" class="fa fa-angle-double-left"></span></a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#" aria-label="Next"><span aria-hidden="true" class="fa fa-angle-double-right"></span></a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </div>
+</div>
