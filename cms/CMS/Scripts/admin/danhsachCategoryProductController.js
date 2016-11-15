@@ -35,6 +35,12 @@
             enableSorting: false
         },
         {
+            displayName: "Thứ tự",
+            name: 'thuTu',
+            enableSorting: true,
+            width: 60,
+        },
+        {
             displayName: "Xuất bản",
             name: 'published'
         },

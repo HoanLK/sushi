@@ -33,6 +33,7 @@ namespace CMS.Models
         public Nullable<int> published { get; set; }
         public string image { get; set; }
         public string tags { get; set; }
+        public Nullable<int> thuTu { get; set; }
         public string version { get; set; }
         public Nullable<int> deleted { get; set; }
         public string metadescription { get; set; }

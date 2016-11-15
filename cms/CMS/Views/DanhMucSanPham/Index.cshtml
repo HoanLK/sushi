@@ -10,7 +10,7 @@
 
             <div class="col-md-3 col-sm-3 col-xs-3 MonAn" dir-paginate="(index, value) in allProduct | itemsPerPage: 12">
                 <a href="/danh-muc-san-pham/{{Product.alias}}-{{product.idProduct}}">
-                    <img alt="{{product.title}}" src="{{product.image}}" class="img-responsive" />
+                    <img alt="{{product.title}}" ng-src="{{product.image}}" class="img-responsive" />
                     <p class="TenMon">{{product.title}}</p>
                     <p class="Gia">Đơn giá: {{product.price}} <sup>đ</sup></p>
                 </a>

@@ -79,17 +79,18 @@
     }
 
         .Body > .NoiDungChinh .ThucDon > .TieuDe {
-            font-family: UVNKieu_B;
+            /*font-family: UVNKieu_B;*/
             font-size: 3em;
             font-weight: bold;
             color: #fff;
             font-style: italic;
             border-bottom: solid 1px #ff0000;
+            margin-top:0.5em;
         }
 
         .Body > .NoiDungChinh .ThucDon > .MonAn {
             padding: 1em;
-            height: auto;
+            height: 20em;
             -webkit-transition: .5s all;
             -moz-transition: .5s all;
         }
@@ -124,6 +125,9 @@
             .Body > .NoiDungChinh .ThucDon > .MonAn .Gia {
                 color: #ff1a1a;
                 font-size: 1.3em;
+                position: absolute;
+                overflow: hidden;
+                bottom: 2%;
             }
 
     .Body > .NoiDungChinh .pagination {
@@ -152,7 +156,7 @@
 
         .Body > .NoiDungChinh .ChiTietMonAn > .TieuDe {
             color: #fff;
-            font-family: UVNKieu_B;
+            /*font-family: UVNKieu_B;*/
             font-size: 3em;
             font-weight: bold;
             border-bottom: solid 1px #ff0000;
@@ -246,12 +250,12 @@
             }
 
                 .Body > .NoiDungChinh .ThucDon > .MonAn .TenMon {
-                    font-size: 0.7em;
+                    font-size: 0.6em;
                     margin: 0;
                 }
 
                 .Body > .NoiDungChinh .ThucDon > .MonAn .Gia {
-                    font-size: 0.65em;
+                    font-size: 0.5em;
                 }
 
         .Body > .NoiDungChinh .pagination > li > a {

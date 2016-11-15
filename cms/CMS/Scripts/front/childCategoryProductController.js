@@ -3,7 +3,6 @@
     $scope.products = [];
     $scope.idCategory = angular.element('#idCategory').val();
 
-
     $http.get('/API/CategoryProductsAPI/')
         .success(function (data) {
             var categories = CategoryProduct.getallCategory(data);
@@ -12,6 +11,7 @@
                     $scope.categories.push(value);
                 }
             });
+            
         })
     $http.get('/API/ProductsAPI/')
         .success(function (data) {

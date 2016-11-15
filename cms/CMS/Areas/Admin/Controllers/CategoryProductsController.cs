@@ -28,7 +28,7 @@ namespace CMS.Areas.Admin.Controllers
         {
             db.Configuration.ProxyCreationEnabled = false;
 
-            var model = db.CategoryProduct.Where(p => p.idCategoryParent == 1);
+            var model = db.CategoryProduct.Where(p => p.idCategoryParent == 1).OrderBy(p => p.thuTu);
 
             return Json(model, JsonRequestBehavior.AllowGet);
         }

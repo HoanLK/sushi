@@ -1,6 +1,7 @@
 ﻿frontApp.controller("homeController", ['$scope', '$http', '$window', 'CategoryPost', function ($scope, $http, $window, CategoryPost) {
     $scope.products = [];
     $scope.posts = [];
+    $scope.spNoiBats = [];
 
     //$scope.idCategory = angular.element('#idCategory').val();
 
@@ -23,5 +24,11 @@
     $http.get('/API/ProductsAPI/')
         .success(function (data) {
             $scope.products = data;
+            angular.forEach(data, function (value, key) {
+                //Sản phẩm nổi bật
+                if (value.feature == 1) {
+                    $scope.spNoiBats.push(value);
+                }
+            });
         });
 }]);

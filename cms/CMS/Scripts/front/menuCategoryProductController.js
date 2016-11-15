@@ -2,7 +2,7 @@
     $scope.categories = [];
     $scope.posts = [];
 
-
+    
 
     $http.get('/CategoryProducts/GetCategoryProduct/')
         .success(function (categoryProducts) {

@@ -43,6 +43,7 @@ myApp.controller("themCategoryProductController", function ($scope, $http, $wind
                     title: data.title,
                     alias: data.alias,
                     note: data.note,
+                    thuTu: data.thuTu,
                     description: data.description,
                     published: data.published,
                     image: data.image,
@@ -66,6 +67,7 @@ myApp.controller("themCategoryProductController", function ($scope, $http, $wind
     else {
         $scope.category = {
             published: 1,
+            thuTu: 0,
             robots: 'Index, Follow',
             idUserCreated: angular.element('#user').val(),
             timeCreated: new Date(),

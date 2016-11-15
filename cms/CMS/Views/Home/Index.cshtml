@@ -7,7 +7,7 @@
 <div ng-controller="homeController">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 TinTuc">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 TinMoi" dir-paginate="(index, value) in posts | itemsPerPage:1">
-            <img src="{{value.image}}" class="img-responsive Anh" />
+            <img ng-src="{{value.image}}" class="img-responsive Anh" />
             <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" class="TieuDe">{{value.title}}</a>
             <p class="NoiDung">
                 {{value.description | limitTo: 100}}{{value.description.length > 100 ? '&hellip;' : ''}}
@@ -25,9 +25,9 @@
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ThucDon" style="border-bottom:solid 1px #ff0000">
         <p class="TieuDe">Nhà hàng Nhật Bản Sushi Kazoku</p>
 
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 MonAn" dir-paginate="(index, value) in products | itemsPerPage: 12">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 MonAn" dir-paginate="(index, value) in spNoiBats | itemsPerPage: 12">
             <a href="/san-pham/{{value.alias}}-{{value.idProduct}}">
-                <img alt="{{value.title}}" src="{{value.image}}" class="img-responsive" />
+                <img alt="{{value.title}}" ng-src="{{value.image}}" class="img-responsive" />
                 <p class="TenMon">{{value.title}}</p>
                 <p class="Gia">Đơn giá: {{value.price | number:0}} <sup>đ</sup></p>
             </a>

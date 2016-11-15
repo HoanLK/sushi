@@ -30,7 +30,6 @@ namespace CMS.Models
         public virtual DbSet<CategoryProduct> CategoryProduct { get; set; }
         public virtual DbSet<Post> Post { get; set; }
         public virtual DbSet<Product> Product { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<Video> Video { get; set; }
         public virtual DbSet<webpages_Membership> webpages_Membership { get; set; }

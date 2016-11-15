@@ -36,7 +36,7 @@ body {
 }
 
     .BaiVietLienQuan > .TieuDe {
-        font-family: UVNKieu_B;
+        /*font-family: UVNKieu_B;*/
         font-size: 3em;
         font-weight: bold;
         color: #fff;
