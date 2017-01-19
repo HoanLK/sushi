@@ -2255,6 +2255,11 @@
     <Content Include="Content\front\js\respond.matchmedia.addListener.min.js" />
     <Content Include="Content\front\js\respond.min.js" />
     <None Include="Content\front\js\_references.js" />
+    <Content Include="Content\front\Popup\jquery.popup.js" />
+    <Content Include="Content\front\Popup\jquery.popup.min.js" />
+    <Content Include="Content\front\Popup\pop.jpg" />
+    <Content Include="Content\front\Popup\popup.css" />
+    <Content Include="Content\front\Popup\popup.min.css" />
     <Content Include="Content\ui-grid.css" />
     <Content Include="Content\ui-grid.min.css" />
     <Content Include="Content\ui-grid.svg" />
@@ -2440,6 +2445,7 @@
     <Content Include="Content\ui-grid.ttf" />
     <Content Include="Content\ui-grid.eot" />
     <None Include="Properties\PublishProfiles\sushi.pubxml" />
+    <Content Include="Views\Shared\_PopTet.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
